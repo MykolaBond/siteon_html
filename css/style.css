@@ -2671,7 +2671,7 @@ header .menu-sticky .button {
 .iq-client {
     position: relative;
     margin-top: 40px;
-    padding: 30px;
+    padding: 30px 30px 60px 30px;
     text-align: center;
     border: 1px solid #f2f2f2;
     -webkit-box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.06);
@@ -2706,22 +2706,18 @@ header .menu-sticky .button {
 
 .client-info {
     margin-top: 30px;
-	position: relative;       /* changed bondarenko */
-	padding-bottom: 80px;     /* changed bondarenko */
 }
 
 .client-name:before {
     content: "\f10d";
     font-family: FontAwesome;
     position: absolute;
-    top: 5px;  
+    top: 5px;
     left: 5px;
     font-size: 44px;
     color: #f0f0f0;
     line-height: normal;
 }
-
-
 
 .client-name:after {
     content: "\f10e";
@@ -2736,29 +2732,28 @@ header .menu-sticky .button {
 
 .client-info p {
     line-height: 28px;
-	
-	/* overflow star here */
-	
-	
-    text-overflow: ellipsis;
+    
+    /*test bondarenko*/
+}
+.hidden-text{
+    max-height: 0;
     overflow: hidden;
-    white-space: nowrap;
-    transition: all 0.2s linear;
+    transition: all .3s linear;
+}
+.iq-client:hover{
+    transform: scale(1.03);
+    transition: all 0.3s linear;
+}
+.iq-client:hover .hidden-text{
+   
+    max-height: 500px;
+}
+.iq-client:hover .points{
+    
+    display: none;
+}
 
-}
-.iq-client:hover .client-info p{
-    white-space: inherit;
-    overflow: visible;
-	background-color: #ffffff;
-}
-.position-test{
-    position: absolute;
-    left: 0;
-    top:75px;
-    right: 0;
-}
     /* end test bondarenko*/
-
 
 .owl-carousel .owl-nav {
     display: block;
