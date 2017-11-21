@@ -2712,8 +2712,8 @@ header .menu-sticky .button {
     content: "\f10d";
     font-family: FontAwesome;
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: 15px;
+    left: 15px;
     font-size: 44px;
     color: #f0f0f0;
     line-height: normal;
@@ -2723,8 +2723,8 @@ header .menu-sticky .button {
     content: "\f10e";
     font-family: FontAwesome;
     position: absolute;
-    bottom: 5px;
-    right: 5px;
+    bottom: 15px;
+    right: 15px;
     font-size: 44px;
     color: #f0f0f0;
     line-height: normal;
@@ -2736,16 +2736,18 @@ header .menu-sticky .button {
     /*test bondarenko*/
 }
 .hidden-text{
+    display: block;
     max-height: 0;
     overflow: hidden;
     transition: all .3s linear;
 }
-.iq-client:hover{
+.item:hover{
     transform: scale(1.03);
+    z-index: 1;
     transition: all 0.3s linear;
 }
 .iq-client:hover .hidden-text{
-   
+
     max-height: 500px;
 }
 .iq-client:hover .points{
