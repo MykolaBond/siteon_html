@@ -2665,7 +2665,7 @@ header .menu-sticky .button {
 -----------------------------------------------------------------------*/
 
 .iq-loved-customers .owl-carousel .owl-item .item {
-    padding: 10px 10px 20px;
+    padding: 31px 10px 20px;
 }
 
 .iq-client {
@@ -2739,15 +2739,15 @@ header .menu-sticky .button {
     display: block;
     max-height: 0;
     overflow: hidden;
-    transition: all .3s linear;
+   
 }
 .item:hover{
-    transform: scale(1.03);
+    transform: scale(1.1);
     z-index: 1;
-    transition: all 0.3s linear;
+    transition: all 0.5s linear;
 }
 .iq-client:hover .hidden-text{
-
+    transition: all 0.5s linear;
     max-height: 500px;
 }
 .iq-client:hover .points{
